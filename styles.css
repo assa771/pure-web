@@ -1,0 +1,356 @@
+body {
+  background: linear-gradient(135deg, #fff 0%, #ececec 100%);
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #252525;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 0 18px 0;
+  background: #fff;
+  border-bottom: 2px solid #ececec;
+  margin-bottom: 14px;
+}
+.logo {
+  height: 70px;
+  width: auto;
+  filter: drop-shadow(0 2px 10px #bbb3);
+  transition: transform 0.17s;
+}
+.logo:hover {
+  transform: scale(1.06) rotate(-2deg);
+  filter: drop-shadow(0 2px 24px #bbb7);
+}
+.container {
+  max-width: 540px;
+  margin: 38px auto 38px auto;
+  padding: 40px 32px 32px 32px;
+  background: #fff;
+  box-shadow: 0 8px 42px #bbb8;
+  border-radius: 22px;
+  border: 1.3px solid #ececec;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.pure-logo-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  height: 120px;
+  margin: 0 auto 18px auto;
+  max-width: 95vw;
+}
+.pure-motif {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1.5;
+  pointer-events: none;
+  object-fit: contain;
+  z-index: 1;
+}
+.pure-napis {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 70%;              /* pôvodne 50%, posunie dolu */
+  transform: translateY(-50%);
+  position: relative;
+  z-index: 2;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 3.5rem;
+  letter-spacing: 0.23em;
+  color: #ce202c;
+  background: linear-gradient(90deg,#ce202c 0%,#b31219 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-align: center;
+  width: 100%;
+  line-height: 1.06;
+  text-shadow: 0 3px 18px #fff, 0 1px 1px #ce202c33;
+}
+
+.hero h2 {
+  font-size: 1.18rem;
+  color: #b31219;
+  font-family: 'Montserrat', Arial, sans-serif;
+  margin-bottom: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+.hero p {
+  font-size: 1.07rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.cta {
+  display: inline-block;
+  background: linear-gradient(90deg,#ce202c 0%,#b31219 100%);
+  color: #fff;
+  padding: 13px 28px;
+  border-radius: 13px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.11em;
+  box-shadow: 0 2px 18px #ce202c15;
+  margin: 18px 0 0 0;
+  letter-spacing: 0.06em;
+  transition: transform 0.15s, background 0.21s, box-shadow 0.16s;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+.cta-wrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 24px 0 0 0;
+}
+.cta:hover {
+  background: linear-gradient(90deg,#b31219 0%,#ce202c 100%);
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 4px 32px #ce202c25;
+  filter: brightness(1.07);
+}
+
+.features h2, .gallery h2, .contact h2 {
+  font-size: 1.15rem;
+  border-left: 5px solid #ce202c;
+  padding-left: 13px;
+  color: #ce202c;
+  margin-bottom: 1.15rem;
+  font-weight: 600;
+}
+.features ul {
+  margin-left: 0;
+  padding-left: 23px;
+  margin-bottom: 0;
+  color: #3b3b3b;
+  font-size: 1em;
+}
+.features li {
+  margin-bottom: 10px;
+  padding-left: 2px;
+}
+
+.gallery-images {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  margin: 14px 0 2px 0;
+  flex-wrap: wrap;
+}
+.gallery-images img {
+  width: 100%;
+  max-width: 180px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 13px;
+  box-shadow: 0 6px 24px #bbb5;
+  background: #eee;
+  transition: transform 0.22s, box-shadow 0.18s;
+  border: 2.5px solid #ececec;
+  margin-bottom: 10px;
+}
+.gallery-images img:hover {
+  transform: scale(1.045) rotate(-1deg);
+  box-shadow: 0 8px 36px #aaa7;
+  border-color: #ce202c44;
+}
+
+.contact {
+  background: linear-gradient(135deg, #f7f7f7 0%, #ececec 100%);
+  padding: 20px 14px 14px 14px;
+  border-radius: 13px;
+  max-width: 400px;
+  margin: 0 auto 0 auto;
+  box-shadow: 0 1.2px 14px #bbb2;
+  border: 1.1px solid #ececec;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  margin-bottom: 14px;
+}
+input, textarea {
+  border-radius: 7px;
+  border: 1.2px solid #bdbdbd;
+  padding: 10px;
+  font-size: 1.06rem;
+  background: #fff;
+  font-family: inherit;
+  transition: border 0.2s, box-shadow 0.18s;
+  box-shadow: 0 1px 8px #bbb5;
+}
+input:focus, textarea:focus {
+  border-color: #ce202c;
+  box-shadow: 0 2.5px 12px #ce202c2a;
+  outline: none;
+}
+button {
+  background: linear-gradient(90deg,#ce202c 0%,#b31219 100%);
+  color: #fff;
+  border: none;
+  border-radius: 11px;
+  padding: 12px;
+  font-weight: 700;
+  font-size: 1.08rem;
+  cursor: pointer;
+  box-shadow: 0 2px 12px #bbb8;
+  transition: background 0.16s, transform 0.15s, box-shadow 0.14s;
+  letter-spacing: 0.04em;
+}
+button:hover {
+  background: linear-gradient(90deg,#b31219 0%,#ce202c 100%);
+  transform: translateY(-1.5px) scale(1.04);
+  box-shadow: 0 4px 22px #aaa7;
+  filter: brightness(1.08);
+}
+.contact-info {
+  margin-top: 12px;
+  font-size: 1.03em;
+  color: #b31219;
+  text-align: center;
+}
+
+/* Responzivita pre mobilné zariadenia */
+@media (max-width: 900px) {
+  .container {
+    max-width: 98vw;
+    padding: 18px 3vw 16px 3vw;
+    border-radius: 14px;
+    box-shadow: 0 4px 16px #bbb7;
+    margin: 15px auto;
+  }
+  .pure-logo-wrap {
+    width: 95vw;
+    max-width: 95vw;
+    height: 80px;
+  }
+  .pure-napis {
+    font-size: 2.4rem;
+  }
+}
+@media (max-width: 700px) {
+  .container {
+    padding: 6vw 2vw 5vw 2vw;
+    border-radius: 10px;
+    margin: 8px auto;
+    gap: 22px;
+  }
+  .site-header {
+    padding: 16px 0 10px 0;
+  }
+  .logo {
+    height: 42px;
+  }
+  .pure-logo-wrap {
+    width: 99vw;
+    height: 62px;
+  }
+  .pure-napis {
+    font-size: 1.75rem;
+    letter-spacing: 0.16em;
+    text-shadow: 0 2px 10px #fff, 0 1px 1px #ce202c33;
+  }
+  .gallery-images {
+    flex-direction: column;
+    gap: 11px;
+    align-items: center;
+    margin: 8px 0 2px 0;
+  }
+  .gallery-images img {
+    max-width: 92vw;
+    height: 110px;
+  }
+  .contact {
+    max-width: 97vw;
+    padding: 14px 2vw 11px 2vw;
+  }
+  .features h2, .gallery h2, .contact h2 {
+    font-size: 1rem;
+    padding-left: 7px;
+    margin-bottom: 0.85rem;
+  }
+  .cta {
+    padding: 11px 12vw;
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 450px) {
+  .pure-logo-wrap {
+    height: 44px;
+    margin-bottom: 10px;
+  }
+  .pure-napis {
+    font-size: 1.18rem;
+    letter-spacing: 0.12em;
+  }
+  .gallery-images img {
+    height: 72px;
+    border-radius: 7px;
+  }
+}
+.features h2, .gallery h2, .contact h2, .product-gallery h2 {
+  font-size: 1.15rem;
+  border-left: 5px solid #ce202c;
+  padding-left: 13px;
+  color: #ce202c;
+  margin-bottom: 1.15rem;
+  font-weight: 600;
+}
+.product-gallery .gallery-images a {
+  text-decoration: none;
+}
+
+.product-gallery .gallery-caption, 
+.product-gallery .gallery-images a {
+  color: #ce202c;
+  font-weight: 600;
+  font-size: 1em;
+  text-align: center;
+  display: block;
+  margin-top: 9px;
+  letter-spacing: 0.04em;
+  transition: color 0.15s;
+}
+
+/* Po prejdení myšou jemný efekt */
+.product-gallery .gallery-images a:hover {
+  color: #b31219;
+  text-decoration: underline;
+}
+.contact-link {
+  color: #ce202c;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.15s;
+}
+.contact-link:hover {
+  color: #b31219;
+  text-decoration: underline;
+}
+.contact-info {
+  font-size: 1.13em;
+  text-align: center;
+  color: #252525;
+}
+.contact-info strong {
+  color: #b31219;
+}
